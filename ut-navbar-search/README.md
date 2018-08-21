@@ -6,10 +6,11 @@ The steps includes these todo´s:
 - create a placeholder navigation bar entry
 - create a region and text item on global page (page 0)
 - create a "onload" DA on global page (moving the item to navbar and adding some nice animations)
+- option : Archivo js/GlobalSearchBar.js
+
 - add some CSS to UT theme roller
 - create a application process for redirecting to other pages (global page branch)
 - optional: create a DA on global page for a loading spinner if enter key gets pressed
-
 
 ## Changelog
 #### 1.1 - solved IE and Firefox Navbar link issues
@@ -107,6 +108,12 @@ $('#P0_SEARCH').focusout(function() {
 ```
 
 ![](https://raw.githubusercontent.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/p0_onload_da.png)
+
+#### Para multiples campos de Busqueda
+Subir archivo - GlobalSearchBar.js (reemplaza codigo js anterior)
+hacer acceso global colocando -  #APP_IMAGES#js/GlobalSearchBar.js en SharedComponents > User Interfaces > JavaScript > File Urls
+
+
 
 #### Explanation
 This javascript code moves the item from our blank region to the navigation bar (appends item to our custom css class) and creates some nice animations for fading out and back in...
